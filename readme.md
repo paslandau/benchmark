@@ -36,7 +36,7 @@ The results are presented as a `BenchmarkResultList` and can be sorted by averag
 
     // get 10000 data points
     $runs = 10000;
-    // call each test 10 to obtain one data point (default is 1)
+    // call each test 10 times to obtain one data point (default is 1)
     $iterations = 10;
 
     //run tests
@@ -82,18 +82,26 @@ The recommended way to install Benchmark is through [Composer](http://getcompose
 
     curl -sS https://getcomposer.org/installer | php
 
-Next, update your project's composer.json file to include FixEncodingSubscriber:
+Next, update your project's composer.json file to include Benchmark:
 
     {
+        "repositories": [
+            {
+                "type": "git",
+                "url": "https://github.com/paslandau/Benchmark.git"
+            }
+        ],
         "require": {
-            "paslandau/Benchmark": "~0"
+             "paslandau/Benchmark": "~0"
         }
     }
 
 After installing, you need to require Composer's autoloader:
+```php
 
     require 'vendor/autoload.php';
-
+ ```  
+ 
 ##Documentation
 
 ###Defining tests
