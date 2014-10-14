@@ -12,6 +12,7 @@ The results are presented as a `BenchmarkResultList` and can be sorted by averag
 
 ##Basic Usage
 ```php
+
     use paslandau\Benchmark\Benchmark;
     use paslandau\Benchmark\BenchmarkResultList;
 
