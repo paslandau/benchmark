@@ -11,7 +11,7 @@ while measuring the runtime of each call.
 The results are presented as a `BenchmarkResultList` and can be sorted by average, total and median runtime.
 
 ##Basic Usage
-
+```php
     use paslandau\Benchmark\Benchmark;
     use paslandau\Benchmark\BenchmarkResultList;
 
@@ -49,6 +49,7 @@ The results are presented as a `BenchmarkResultList` and can be sorted by averag
 
     // display results
     echo $res;
+```
     
 **Output**
 
@@ -84,7 +85,7 @@ Next, update your project's composer.json file to include FixEncodingSubscriber:
 
     {
         "require": {
-            "paslandau/Benchmark": "~0.1"
+            "paslandau/Benchmark": "~0"
         }
     }
 
