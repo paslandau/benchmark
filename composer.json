@@ -1,0 +1,17 @@
+{
+    "name": "paslandau/Benchmark",
+    "description" : "",
+    "authors": [
+        {
+            "name": "Pascal Landau",
+            "email": "kontakt@myseosolution.de",
+            "homepage": "http://www.myseosolution.de",
+            "role": "Developer"
+        }
+    ],
+	"autoload": {
+	    "psr-4": {
+	        "paslandau\\Benchmark\\": "src/"
+	    }
+	}
+}
