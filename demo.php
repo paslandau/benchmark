@@ -9,7 +9,7 @@
     use paslandau\Benchmark\Benchmark;
     use paslandau\Benchmark\BenchmarkResultList;
 
-    require_once __DIR__.'/../../vendor/autoload.php';
+    require_once __DIR__.'/../../../vendor/autoload.php';
 
     //define tests
     $tests = [
