@@ -94,10 +94,11 @@ After installing, you need to require Composer's autoloader:
 
     require 'vendor/autoload.php';
 
-##Docu
+##Documentation
 
 ###Defining tests
 Each test is defined as a `Closure` that gets the `$params` parameter passed when executed. The tests are then passed to the `Benchmark` as an associative array.
+```php
 
     //define tests
     $tests = [
@@ -108,19 +109,25 @@ Each test is defined as a `Closure` that gets the `$params` parameter passed whe
     ];
     
     $benchmark = new Benchmark($tests, 1);
-    
+ ```   
+ 
 ###Defining runs and iterations
 One iteration is defined as one call to a test. One run is defined as `n` iterations. So the total number of test executions is `runs` times `iterations`.
 The distinction is made due to the fact that a test can potentially be executed extremely fast, resulting in a `0` value for the median.
+
+```php
 
     $tests = ['foo' => function($params){}];
     $runs = 1000;
     $iterations = 100
     $benchmark = new Benchmark($tests, $runs, $iterations); // test 'foo' will be executed 100000 times
-    
+```
+
 ###Defining output format
 The result of a `Benchmark::run` is an object of type `BenchmarkResultList` which implements the `__toString()` method. You can specify the order 
 of the displayed results as well as the precision used when displaying the run times in seconds.
+
+```php
 
     $tests = ['foo' => function($params){}];
     $benchmark = new Benchmark($tests);
@@ -135,7 +142,7 @@ of the displayed results as well as the precision used when displaying the run t
 
     // display results
     echo $res;
-    
+ ```   
 ##Related projects
 
 - [php-benchmark](https://github.com/lavoiesl/php-benchmark)
