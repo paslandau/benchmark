@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hirnhamster
- * Date: 14.10.2014
- * Time: 12:15
- */
 
     use paslandau\Benchmark\Benchmark;
     use paslandau\Benchmark\BenchmarkResultList;
+use paslandau\IOUtility\IOUtil;
 
-    require_once __DIR__.'/../../../vendor/autoload.php';
+require_once __DIR__ . '/demo-bootstrap.php';
 
     //define tests
     $tests = [
