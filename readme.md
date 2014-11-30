@@ -85,14 +85,10 @@ The recommended way to install benchmark is through [Composer](http://getcompose
 Next, update your project's composer.json file to include Benchmark:
 
     {
-        "repositories": [
-            {
-                "type": "git",
-                "url": "https://github.com/paslandau/benchmark.git"
-            }
-        ],
+        "repositories": [ { "type": "composer", "url": "http://packages.myseosolution.de/"} ],
+        "minimum-stability": "dev",
         "require": {
-             "paslandau/benchmark": "~0"
+             "paslandau/benchmark": "dev-master"
         }
     }
 
