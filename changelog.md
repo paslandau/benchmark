@@ -1,3 +1,7 @@
+## 0.1.0
+
+ - changed package name from Benchmark to benchmark
+
 ###0.0.5
 
 - added changelog

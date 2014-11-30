@@ -1,6 +1,7 @@
 {
-    "name": "paslandau/Benchmark",
-    "description" : "",
+    "name": "paslandau/benchmark",
+    "license": "MIT",
+    "description" : "Convenience class for performing benchmark checks on PHP functions",
     "authors": [
         {
             "name": "Pascal Landau",

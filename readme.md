@@ -1,11 +1,11 @@
-#Benchmark
+#benchmark
 
 Convenience class for performing benchmark checks on PHP functions.
 
 ##Description
 
 I've found myself time and time again writing a small benchmark test for some PHP functions to check for performance implications.
-This project simplifies the process by introducing a `Benchmark` class that takes a list of callables as input and performs them `n` times 
+This project simplifies the process by introducing a `benchmark` class that takes a list of callables as input and performs them `n` times 
 while measuring the runtime of each call.
 
 The results are presented as a `BenchmarkResultList` and can be sorted by average, total and median runtime.
@@ -78,7 +78,7 @@ The results are presented as a `BenchmarkResultList` and can be sorted by averag
 
 ##Installation
 
-The recommended way to install Benchmark is through [Composer](http://getcomposer.org/).
+The recommended way to install benchmark is through [Composer](http://getcomposer.org/).
 
     curl -sS https://getcomposer.org/installer | php
 
@@ -88,11 +88,11 @@ Next, update your project's composer.json file to include Benchmark:
         "repositories": [
             {
                 "type": "git",
-                "url": "https://github.com/paslandau/Benchmark.git"
+                "url": "https://github.com/paslandau/benchmark.git"
             }
         ],
         "require": {
-             "paslandau/Benchmark": "~0"
+             "paslandau/benchmark": "~0"
         }
     }
 
@@ -105,7 +105,7 @@ After installing, you need to require Composer's autoloader:
 ##Documentation
 
 ###Defining tests
-Each test is defined as a `Closure` that gets the `$params` parameter passed when executed. The tests are then passed to the `Benchmark` as an associative array.
+Each test is defined as a `Closure` that gets the `$params` parameter passed when executed. The tests are then passed to the `benchmark` as an associative array.
 ```php
 
     //define tests
