@@ -31,6 +31,10 @@ class Benchmark {
         $this->iterations = $iterations;
     }
 
+    /**
+     * @param $params
+     * @return BenchmarkResultList
+     */
     public function run($params){
         $results = [];
         foreach($this->tests as $name => $f) {
