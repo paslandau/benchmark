@@ -1,6 +1,6 @@
 ## 0.1.1
 
- - updated repositories to local satis installation
+ - updated repositories to local satis installation [] this is foo
 
 ## 0.1.0
 
