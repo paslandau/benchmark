@@ -1,6 +1,6 @@
 ## 0.1.1
 
- - updated repositories to local satis installation
+ - updated repositories to local satis installation [wtf]
 
 ## 0.1.0
 
