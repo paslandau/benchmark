@@ -1,8 +1,16 @@
-#benchmark
+# DEPRECATED ⛔ 
+This repository has been deprecated as of 2019-01-27. That code was written a long time ago and 
+has been unmaintained for several years. 
+
+The repository will now be [archived](https://github.blog/2017-11-08-archiving-repositories/)
+
+---
+
+# benchmark
 
 Convenience class for performing benchmark checks on PHP functions.
 
-##Description
+## Description
 
 I've found myself time and time again writing a small benchmark test for some PHP functions to check for performance implications.
 This project simplifies the process by introducing a `benchmark` class that takes a list of callables as input and performs them `n` times 
@@ -10,7 +18,7 @@ while measuring the runtime of each call.
 
 The results are presented as a `BenchmarkResultList` and can be sorted by average, total and median runtime.
 
-##Basic Usage
+## Basic Usage
 ```php
 
     use paslandau\Benchmark\Benchmark;
@@ -72,11 +80,11 @@ The results are presented as a `BenchmarkResultList` and can be sorted by averag
     Median : 0.001 s
     Average: 0.000528 s
 
-##Requirements
+## Requirements
 
 - PHP >= 5.5
 
-##Installation
+## Installation
 
 The recommended way to install benchmark is through [Composer](http://getcomposer.org/).
 
@@ -105,9 +113,9 @@ After installing, you need to require Composer's autoloader:
     require 'vendor/autoload.php';
  ```  
  
-##Documentation
+## Documentation
 
-###Defining tests
+### Defining tests
 Each test is defined as a `Closure` that gets the `$params` parameter passed when executed. The tests are then passed to the `benchmark` as an associative array.
 ```php
 
@@ -122,7 +130,7 @@ Each test is defined as a `Closure` that gets the `$params` parameter passed whe
     $benchmark = new Benchmark($tests, 1);
  ```   
  
-###Defining runs and iterations
+### Defining runs and iterations
 One iteration is defined as one call to a test. One run is defined as `n` iterations. So the total number of test executions is `runs` times `iterations`.
 The distinction is made due to the fact that a test can potentially be executed extremely fast, resulting in a `0` value for the median.
 
@@ -134,7 +142,7 @@ The distinction is made due to the fact that a test can potentially be executed 
     $benchmark = new Benchmark($tests, $runs, $iterations); // test 'foo' will be executed 100000 times
 ```
 
-###Defining output format
+### Defining output format
 The result of a `Benchmark::run` is an object of type `BenchmarkResultList` which implements the `__toString()` method. You can specify the order 
 of the displayed results as well as the precision used when displaying the run times in seconds.
 
@@ -154,6 +162,6 @@ of the displayed results as well as the precision used when displaying the run t
     // display results
     echo $res;
  ```   
-##Related projects
+## Related projects
 
 - [php-benchmark](https://github.com/lavoiesl/php-benchmark)
